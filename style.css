@@ -8,6 +8,7 @@ body {
     background-color: #fff;
     color: #333;
     line-height: 1.8;
+    background-color: rgba(95, 235, 235, 0.1);
 }
 
 /* HEADER PAGE */
@@ -56,7 +57,7 @@ header {
 
 .main-nav div {
     margin: 0 15px;
-    width: 250px;
+    width: 25%;
 }
 
 .main-nav a {
@@ -72,5 +73,187 @@ header {
 .main-nav a:hover {
     color: darkcyan;
     font-size: 16px;
-    padding: auto;
+    text-transform: uppercase;
+}
+
+/* SEÇÕES - INTRODUÇÃO AO CSS */
+
+.section {
+    padding: 25px;
+    margin: 20px 20px;
+    background-color: rgba(95, 235, 235, 0.05);
+    border-radius: 20px;
+    box-shadow: inset 0 0 25px #2c2b2b63;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    color: darkcyan;
+}
+
+#sec-intro ul li {
+    list-style: none;
+}
+
+#sec-intro ul li::before {
+    content: '\2713  ';
+    color: darkcyan;
+    font-weight: bold;
+}
+
+.box-principal {
+    width: 300px;
+    height: 75px;
+    border-radius: 15px;
+    background-color: rgba(127, 255, 212, 0.05);
+    box-shadow: 0 0 25px #2c2b2b96;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 1000;
+    text-transform: uppercase;
+    transition: 0.5s;
+
+}
+
+.box-principal:hover {
+    background-color: rgba(127, 255, 212, 0.575);
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 10px;
+    color: darkcyan;
+}
+
+/* ALINHAMENTO DE DIVS */
+
+#sec-alinhamento {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-box{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.box {
+    box-shadow: 0 0 25px #2c2b2b96;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    font-weight: 450;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    transition: 0.5s;
+}
+
+.box:hover {
+    background-color: rgba(127, 255, 212, 0.575);
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.5s;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 25px #2c2b2b67;
+    color: darkcyan;
+}
+
+/* CORES E GRADIENTES */
+
+.color-box {
+    width: 20%;
+    height: 100px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.color-box:hover{
+    margin-left: 5px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+#sec-colors {
+    display: flex;
+    flex-direction: column;
+}
+
+.cores {
+    display: flex;
+    flex-direction: row;
+}
+
+.color1 { background: radial-gradient(red, yellow); }
+.color2 { background: linear-gradient(90deg, #1b1678 0%, #ba259a 50%, #589d13 100%); }
+.color3 { background: linear-gradient(to bottom, #11772e 0%, #7e2167 50%, #b5c6d0 100%);}
+.color4 { background: linear-gradient(to right, #7f5c15, #d8e1e7, #b5c6d0, #529f0f); color: black; }
+.color5 { background: linear-gradient(to right, red 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80%);color: black;}
+
+/* OUTRAS PROPRIEDADES */
+
+#sec-extras {
+    display: flex;
+    flex-direction: column;
+}
+
+.extras {
+    display: flex;
+}
+
+.extra-box {
+    box-shadow: 0 0 25px #2c2b2b96;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    font-weight: 450;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+}
+
+.border-box {
+    border: solid darkcyan 3px;
+    padding: 10px;
+}
+
+.hover-box {
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.hover-box:hover {
+    background-color: darkcyan;
+    transition: 0.5s;
+    color: white;
+}
+
+.float-box {
+    padding: 10px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: aquamarine;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+footer:hover{
+    background-color: darkcyan;
+    color: #fff;
+    transition: 0.5s;
 }
